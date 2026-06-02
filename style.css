@@ -15,50 +15,38 @@ font-family:'Poppins',sans-serif;
 height:100vh;
 
 display:flex;
-
 justify-content:center;
-
 align-items:center;
-
 text-align:center;
 
 background:
 linear-gradient(
-rgba(0,0,0,.8),
-rgba(0,0,0,.9));
+rgba(0,0,0,.75),
+rgba(0,0,0,.85)),
+url("fog.jpg");
 
-}
-
-.profile{
-
-width:200px;
-
-height:200px;
-
-border-radius:50%;
-
-object-fit:cover;
-
-border:5px solid #e50914;
-
-margin-bottom:20px;
-
+background-size:cover;
+background-position:center;
 }
 
 .hero h1{
 
 font-size:4rem;
-
 font-family:'Cinzel',serif;
-
 }
 
 .tagline{
 
-color:#ccc;
-
 margin-top:10px;
+color:#ddd;
+}
 
+.quote{
+
+font-style:italic;
+color:#aaa;
+margin-top:15px;
+font-size:1.1rem;
 }
 
 .btn{
@@ -79,6 +67,12 @@ border-radius:6px;
 
 font-weight:bold;
 
+margin-right:10px;
+}
+
+.whatsapp{
+
+background:#25D366;
 }
 
 .about,
@@ -86,38 +80,35 @@ font-weight:bold;
 .producer{
 
 padding:80px 10%;
-
 text-align:center;
+}
 
+.about p{
+
+max-width:800px;
+margin:auto;
+line-height:1.8;
 }
 
 .section-title{
 
 text-align:center;
-
 font-size:2rem;
-
 margin-bottom:40px;
-
 }
 
 .cards{
 
 display:flex;
-
 justify-content:center;
-
 gap:30px;
-
 flex-wrap:wrap;
-
 padding-bottom:60px;
-
 }
 
 .card{
 
-width:350px;
+width:340px;
 
 background:#171717;
 
@@ -127,20 +118,23 @@ border-radius:15px;
 
 transition:.3s;
 
+box-shadow:0 0 20px rgba(0,0,0,.4);
 }
 
 .card:hover{
 
 transform:translateY(-10px);
-
 }
 
 .card h3{
 
 color:#e50914;
-
 margin-bottom:15px;
+}
 
+.card p{
+
+line-height:1.7;
 }
 
 .card button{
@@ -157,14 +151,13 @@ color:white;
 
 cursor:pointer;
 
+border-radius:5px;
 }
 
 .producer-box{
 
-line-height:2.2;
-
+line-height:2.3;
 font-size:1.1rem;
-
 }
 
 .popup{
@@ -174,19 +167,15 @@ display:none;
 position:fixed;
 
 top:0;
-
 left:0;
 
 width:100%;
-
 height:100%;
 
 background:rgba(0,0,0,.9);
 
 justify-content:center;
-
 align-items:center;
-
 }
 
 .popup-content{
@@ -196,19 +185,14 @@ background:#151515;
 padding:40px;
 
 width:80%;
-
 max-width:800px;
 
 border-radius:10px;
-
 }
 
 .close{
 
 font-size:30px;
-
 float:right;
-
 cursor:pointer;
-
 }
