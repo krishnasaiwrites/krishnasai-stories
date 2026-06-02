@@ -1,54 +1,291 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Krishna Sai Stories</title>
-    <link rel="stylesheet" href="style.css">
+
+<title>Krishna Sai Stories</title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-<header>
-    <h1>KRISHNA SAI STORIES</h1>
-    <p>Writer | Storyteller | Screenwriter</p>
-</header>
+<section class="hero">
 
-<section>
-    <h2>About Me</h2>
+<div class="hero-content">
 
-    <p>
-        Hi, I'm Krishna Sai.
-        I write emotional Telugu-English stories,
-        short-film scripts, and screenplays.
-    </p>
-</section>
+<img src="profile.jpg" class="profile">
 
-<section>
-    <h2>Featured Stories</h2>
+<h1>KRISHNA SAI STORIES</h1>
 
-    <div class="card">
-        <h3>A Story That Never Began</h3>
-        <p>
-            A student silently admires his teacher
-            for three years and later realizes
-            it was never love, but a memory.
-        </p>
-    </div>
+<p class="tagline">
 
-    <div class="card">
-        <h3>The Girl From The Fog</h3>
-        <p>
-            A college romance that begins
-            on a foggy December morning.
-        </p>
-    </div>
+Original Telugu-English Screenplays &
+Short Film Concepts
+
+</p>
+
+<a href="#stories" class="btn">
+Explore Stories
+</a>
+
+</div>
 
 </section>
 
-<section>
-    <h2>Contact</h2>
+<section class="about">
 
-    <p>Email: krishnasainagulapati14@gmail.com</p>
-    <p>Instagram: @damn_itz.krishna</p>
+<h2>ABOUT ME</h2>
+
+<p>
+
+Hi, I'm Krishna Sai.
+
+An aspiring Telugu-English writer
+passionate about emotional dramas,
+coming-of-age stories, romance,
+friendship, and cinematic storytelling.
+
+I write stories inspired by memories,
+emotions, and people we never forget.
+
+</p>
+
 </section>
+
+<section id="stories">
+
+<h2 class="section-title">
+
+FEATURED STORIES
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>A Story That Never Began</h3>
+
+<p>
+
+A student silently admires
+his teacher for three years
+and later realizes it was never love,
+but a memory.
+
+</p>
+
+<button onclick="story1()">
+
+Read Preview
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h3>The Girl From The Fog</h3>
+
+<p>
+
+A college romance that begins
+on a foggy December morning.
+
+</p>
+
+<button onclick="story2()">
+
+Read Preview
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="producer">
+
+<h2>
+
+AVAILABLE FOR
+
+</h2>
+
+<div class="producer-box">
+
+<p>✓ Short Film Adaptation</p>
+
+<p>✓ Web Series Development</p>
+
+<p>✓ Dialogue Writing</p>
+
+<p>✓ Story Development</p>
+
+<p>✓ Creative Collaboration</p>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2>
+
+REQUEST FULL SCRIPT
+
+</h2>
+
+<p>
+
+Interested in reading the
+complete screenplay?
+
+</p>
+
+<a href="mailto:krishnasainagulapati14@gmail.com"
+class="btn">
+
+Request Full Script
+
+</a>
+
+<br><br>
+
+<p>
+
+📧 krishnasainagulapati14@gmail.com
+
+</p>
+
+<p>
+
+📱 9381697412
+
+</p>
+
+<p>
+
+📸 @damn_itz.krishna
+
+</p>
+
+</section>
+
+<div id="popup" class="popup">
+
+<div class="popup-content">
+
+<span class="close"
+onclick="closePopup()">
+
+×
+
+</span>
+
+<div id="storyText"></div>
+
+</div>
+
+</div>
+
+<script>
+
+function story1(){
+
+document.getElementById("popup").style.display="flex";
+
+document.getElementById("storyText").innerHTML=`
+
+<h2>A Story That Never Began</h2>
+
+<p>
+
+Everything begins in the eighth grade.
+
+A new teacher enters the classroom.
+
+What starts as curiosity
+slowly becomes admiration.
+
+For three years he carries
+that emotion silently.
+
+Years later he realizes:
+
+It was never a love story.
+
+It was a memory.
+
+</p>
+
+<hr>
+
+<h3>
+
+Contact the writer
+for the complete screenplay.
+
+</h3>
+
+`;
+
+}
+
+function story2(){
+
+document.getElementById("popup").style.display="flex";
+
+document.getElementById("storyText").innerHTML=`
+
+<h2>The Girl From The Fog</h2>
+
+<p>
+
+One foggy December morning,
+an engineering student notices
+a mysterious girl walking
+toward a temple.
+
+A friendship begins.
+
+A rejection follows.
+
+An eight-month wait changes everything.
+
+</p>
+
+<hr>
+
+<h3>
+
+Contact the writer
+for the complete screenplay.
+
+</h3>
+
+`;
+
+}
+
+function closePopup(){
+
+document.getElementById("popup").style.display="none";
+
+}
+
+</script>
 
 </body>
 </html>
