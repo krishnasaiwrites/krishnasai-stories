@@ -196,3 +196,52 @@ font-size:30px;
 float:right;
 cursor:pointer;
 }
+.story-page{
+
+max-width:900px;
+
+margin:auto;
+
+padding:80px 10%;
+
+line-height:1.8;
+
+}
+
+.story-page h1{
+
+color:#e50914;
+
+margin-bottom:20px;
+
+}
+
+.story-tagline{
+
+font-style:italic;
+
+color:#bbb;
+
+margin-bottom:30px;
+
+}
+
+blockquote{
+
+border-left:4px solid #e50914;
+
+padding-left:20px;
+
+margin:20px 0;
+
+font-style:italic;
+
+color:#ddd;
+
+}
+
+a{
+
+color:white;
+
+}
