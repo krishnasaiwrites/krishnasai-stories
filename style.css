@@ -126,39 +126,6 @@ box-shadow:0 0 20px rgba(0,0,0,.4);
 transform:translateY(-10px);
 }
 
-.card h3{
-
-color:#e50914;
-margin-bottom:15px;
-}
-
-.card p{
-
-line-height:1.7;
-}
-
-.card button{
-
-margin-top:20px;
-
-padding:10px 20px;
-
-border:none;
-
-background:#e50914;
-
-color:white;
-
-cursor:pointer;
-
-border-radius:5px;
-}
-
-.producer-box{
-
-line-height:2.3;
-font-size:1.1rem;
-}
 
 .popup{
 
